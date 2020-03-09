@@ -1,0 +1,27 @@
+{
+  "name": "Exchange me",
+  "version": "0.2.0",
+  "manifest_version": 2,
+  "description": "small app to get current price of cryptocurrency",
+  "icons": {
+    "16": "icon_16.png",
+    "32": "icon_32.png",
+    "128": "icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon_32.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "browsingData",
+    "*://*.google.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
